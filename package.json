@@ -4,7 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:ropsten": "truffle migrate --network ropsten",
+    "test": "truffle test"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/planethouki/etherscan-verify-test/issues"
   },
-  "homepage": "https://github.com/planethouki/etherscan-verify-test#readme"
+  "homepage": "https://github.com/planethouki/etherscan-verify-test#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.29",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.9"
+  }
 }
